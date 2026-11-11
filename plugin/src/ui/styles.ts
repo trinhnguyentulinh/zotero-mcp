@@ -131,7 +131,7 @@ const BASE = `
 .zmc .stat[data-state="checking"] .stat__dot { animation: zmc-pulse 900ms ease-in-out infinite; }
 .zmc .body, .zmc .chat, .zmc .viewhost { flex: 1; min-height: 0; display: flex; flex-direction: column; }
 .zmc .body { position: relative; }
-.zmc .dock { flex: none; width: 100%; max-width: 46rem; margin: 0 auto; padding: 0 var(--s4) var(--s3); }
+.zmc .dock { flex: none; width: 100%; max-width: 100%; margin: 0 auto; padding: 0 var(--s4) var(--s3); }
 
 /* ---------- setup card and fix log ---------- */
 .zmc .setup { padding: var(--s3) var(--s4); border: 1px solid var(--rule-strong); border-radius: var(--r2); background: var(--paper-raised); box-shadow: inset 2px 0 0 var(--warn); }

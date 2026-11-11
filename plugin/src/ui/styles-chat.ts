@@ -3,7 +3,7 @@ export const CHAT_STYLES = `
 .zmc .feedwrap { position: relative; flex: 1; min-height: 0; display: flex; flex-direction: column; }
 .zmc .feed { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; }
 .zmc .feed:focus-visible { outline-offset: -2px; }
-.zmc .feed__inner { max-width: 46rem; margin: 0 auto; padding: var(--s4) var(--s4) var(--s5); display: flex; flex-direction: column; gap: var(--s5); min-height: 100%; }
+.zmc .feed__inner { max-width: 100%; margin: 0 auto; padding: var(--s4) var(--s4) var(--s5); display: flex; flex-direction: column; gap: var(--s5); min-height: 100%; }
 .zmc .feed__inner--empty { justify-content: center; }
 .zmc .jump { position: absolute; left: 50%; bottom: var(--s3); transform: translateX(-50%); z-index: 5; display: grid; place-items: center; width: var(--h-md); height: var(--h-md); padding: 0; border: 1px solid var(--rule); border-radius: 50%; background: var(--paper-raised); color: var(--ink); box-shadow: var(--shadow); animation: zmc-fade 120ms ease; transition: border-color var(--ease); }
 .zmc .jump:hover { border-color: var(--rule-strong); }
@@ -18,7 +18,7 @@ export const CHAT_STYLES = `
 }
 .zmc .msg--assistant:not([data-state="running"]) { content-visibility: auto; contain-intrinsic-size: auto 120px; }
 .zmc .msg--user { display: flex; justify-content: flex-end; }
-.zmc .ubub { max-width: min(88%, 34rem); padding: var(--s2) var(--s3); background: var(--paper-raised); border: 1px solid var(--rule); border-radius: var(--r3) var(--r3) var(--r0) var(--r3); }
+.zmc .ubub { max-width: 88%; padding: var(--s2) var(--s3); background: var(--paper-raised); border: 1px solid var(--rule); border-radius: var(--r3) var(--r3) var(--r0) var(--r3); }
 .zmc[data-theme="dark"] .ubub { background: var(--paper-sunk); }
 .zmc .ubub__text { margin: 0; font-size: var(--fs-4); line-height: 1.5; white-space: pre-wrap; overflow-wrap: anywhere; }
 .zmc .ubub__chips { display: flex; flex-wrap: wrap; gap: var(--s1); margin-bottom: var(--s2); }
@@ -128,7 +128,7 @@ export const CHAT_STYLES = `
 .zmc .md--streaming > p:last-child::after, .zmc .md--streaming > :is(ul, ol):last-child > li:last-child::after { content: ""; display: inline-block; width: 2px; height: 1em; margin-left: 2px; margin-right: -4px; vertical-align: -0.15em; background: var(--agent); animation: zmc-caret 1.1s steps(1, end) infinite; }
 .zmc .md-table { overflow-x: auto; border: 1px solid var(--rule); border-radius: var(--r1); }
 .zmc .md-table table { border-collapse: collapse; width: 100%; min-width: max-content; font-size: var(--fs-3); }
-.zmc .md-table :is(th, td) { padding: var(--s2) var(--s3); border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; max-width: 22rem; overflow-wrap: normal; }
+.zmc .md-table :is(th, td) { padding: var(--s2) var(--s3); border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; overflow-wrap: normal; }
 .zmc .md-table th { font-weight: 600; font-size: var(--fs-2); color: var(--ink-muted); background: var(--paper-sunk); white-space: nowrap; }
 .zmc .md-table tr:last-child td { border-bottom: 0; }
 .zmc .md-table [align="center"] { text-align: center; } .zmc .md-table [align="right"] { text-align: right; }
